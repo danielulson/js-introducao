@@ -4,11 +4,6 @@ botaoAdicionar.addEventListener("click", function (event) {
   event.preventDefault();
   var form = document.querySelector("#form-adiciona");
 
-  // var nome = form.nome.value;
-  // var peso = form.peso.value;
-  // var altura = form.altura.value;
-  // var gordura = form.gordura.value;
-
   var paciente = {
     nome: form.nome.value,
     peso: form.peso.value,
@@ -29,7 +24,6 @@ botaoAdicionar.addEventListener("click", function (event) {
   pesoTd.textContent = paciente.peso;
   alturaTd.textContent = paciente.altura;
   gorduraTd.textContent = paciente.gordura;
-  // imcTd.textContent = (peso / (altura * altura)).toFixed(2);
   imcTd.textContent = paciente.imc;
 
   pacienteTr.appendChild(nomeTd);
