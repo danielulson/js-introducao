@@ -8,4 +8,4 @@ tabela.addEventListener("dblclick", function(event) {
     setTimeout(() => {
         event.target.parentNode.remove();
     }, 500);
-})
+});
